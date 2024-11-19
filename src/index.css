@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Specific offset for the "about" section */
+#about {
+  scroll-margin-top: 100px; /* Custom offset for this section */
+}
+
+/* Specific offset for the "projects" section */
+#projects {
+  scroll-margin-top: 70px; /* Custom offset for this section */
+}
+#blog {
+  scroll-margin-top: 70px; /* Custom offset for this section */
+}
+#contact-form {
+  scroll-margin-top: 70px; /* Custom offset for this section */
+}
