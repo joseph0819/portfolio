@@ -17,7 +17,7 @@ const About = () => {
           />
           <div className="text-center md:text-left">
             <p className="text-lg text-gray-700 leading-relaxed">
-              I'm <span className="font-semibold text-blue-600">Joseph Umunna</span>, a passionate <span className="font-semibold text-blue-600">Frontend Developer</span> and <span className="font-semibold text-blue-600">Technical Writer</span>.
+              I'm <span className="font-semibold text-blue-600"> Umunna Chimaroke Joseph</span>, a passionate <span className="font-semibold text-blue-600">Frontend Developer</span> and <span className="font-semibold text-blue-600">Technical Writer</span>.
               I have a <span className="font-semibold">National Diploma in Computer Science</span> and a <span className="font-semibold">Bachelor's degree in Statistics</span>, giving me a balanced foundation in both technical and analytical skills.
             </p>
             <p className="mt-4 text-lg text-gray-700 leading-relaxed">

@@ -13,7 +13,7 @@ function Hero() {
         {/* Text Section */}
         <div className="text-center md:text-left md:w-1/2 animate__animated animate__fadeInLeft">
           <h1 className="text-5xl md:text-6xl font-bold ">
-            Hi, I'm Umunna Joseph
+            Hi, I'm Umunna Chimaroke  Joseph
           </h1>
           <p className="mt-6 text-lg md:text-xl">
             A Frontend Developer, Tech Blogger, and passionate about creating interactive user experiences. I love turning complex problems into simple, beautiful interfaces.
