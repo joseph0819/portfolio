@@ -110,7 +110,7 @@ const Blog = () => {
 
         {/* Full-width Carousel */}
         <div
-          className="relative w-full flex items-center justify-center"
+          className="hidden relative w-full lg:flex items-center justify-center"
           onWheel={handleWheel} // Add wheel event for mouse scrolling
         >
           <button

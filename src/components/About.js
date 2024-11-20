@@ -62,14 +62,16 @@ const About = () => {
                 <span className="font-semibold">AltSchool Africa Internship</span> – Gained hands-on experience in frontend development.
               </li>
               <li>
-                <span className="font-semibold">Royalsmith Trucking LLC</span> – Frontend Engineer, Jan. 2022 – March 2022.
-              </li>
-              <li>
                 <span className="font-semibold">KSolutionsNG Consulting</span> – Frontend Engineer, April 2023 – Present.
               </li>
+              
               <li>
                 <span className="font-semibold">Freelance Developer</span> – Currently working on freelance projects and writing articles on the side.
               </li>
+              <li>
+                <span className="font-semibold">Royalsmith Trucking LLC</span> – Frontend Engineer, May. 2022 – July 2022.
+              </li>
+              
             </ul>
           </div>
 
