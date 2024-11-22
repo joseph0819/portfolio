@@ -2,6 +2,12 @@ import React from 'react';
 
 function Projects() {
   const projectList = [
+
+    {
+      title: 'Adashe',
+      description: 'Project Adashe is building a system for data federation and virtualization, tied to a smart contract it can enable automatic execution of commands. We aim to to eliminate high costs and restrictions in payments, connecting the world of finance and data.',
+      link: 'https://adashe.io/',
+    },
     {
       title: 'Tech Learning Path Prompt System',
       description: 'An AI-powered tool for creating personalized learning paths in tech. Perfect for beginners and career switchers, it provides structured learning paths tailored to each user’s unique interests and goals in the tech industry.',
@@ -17,11 +23,7 @@ function Projects() {
       description: 'An easy-to-use QR code generator, offering quick and customizable QR code creation for personal and professional needs. Perfect for events, product links, or any use that demands seamless sharing and connectivity.',
       link: 'https://qrgennn.netlify.app/',
     },
-    {
-      title: 'Quote of the Day Generator',
-      description: 'A motivational tool that delivers a fresh quote every day. Ideal for adding a daily dose of inspiration and reflection, this app promotes positivity and encourages mindfulness in a simple, accessible format.',
-      link: 'https://quotefortoday.netlify.app/',
-    },
+    
   ];
 
   return (
