@@ -1,45 +1,55 @@
 import React from 'react';
-import myphoto from './img/myphoto.jpeg';
+import myphoto from './img/img-3.jpeg';
 import CV from './files/CV.pdf';
 
 const About = () => {
   return (
-    <section id="about" className="bg-white py-16 px-4">
+    <section id="about" className="bg-gray-50 text-slate-800 py-20 px-6 md:px-10">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-center text-gray-800 mb-6 md:mb-12">About Me</h2>
+        {/* Section Title */}
+        <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-12">
+          About Me
+        </h2>
 
-        {/* Introduction Section */}
-        <div className="flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-8">
-          {/* Hide the image on mobile devices */}
+        {/* Intro Section */}
+        <div className="flex flex-col md:flex-row items-center md:items-start gap-10 md:gap-16">
+          {/* Image */}
           <img
             src={myphoto}
-            alt="Profile"
-            className="w-40 h-40 rounded-full object-cover shadow-lg hidden md:block"
+            alt="Chimaroke Joseph Umunna"
+            className="w-48 h-48 md:w-60 md:h-60 rounded-full object-cover shadow-xl border-4 border-slate-200 hover:scale-105 transition-transform duration-500"
           />
-          <div className="text-center md:text-left">
-            <p className="text-lg text-gray-700 leading-relaxed">
-              I'm <span className="font-semibold text-blue-600">Umunna Chimaroke Joseph</span>, a passionate{' '}
-              <span className="font-semibold text-blue-600">Frontend Developer</span> and{' '}
-              <span className="font-semibold text-blue-600">Technical Writer</span>.
-              I have a <span className="font-semibold">Bachelor's degree in Statistics</span> and a{' '}
-              <span className="font-semibold">National Diploma in Computer Science</span>, giving me a balanced foundation in both technical and analytical skills.
+
+          {/* Text */}
+          <div className="flex-1 text-center md:text-left">
+            <p className="text-lg md:text-xl leading-relaxed text-slate-700">
+              I'm <span className="font-semibold text-slate-900">Chimaroke Joseph Umunna </span>, a{' '}
+              Ph.D. Student in Computer Science & Engineering at the{' '}
+              <span className="font-semibold text-slate-900">University of Cincinnati</span> {' '}
+              focused on creating human-centered,
+              intelligent digital experiences.
             </p>
-            <p className="mt-4 text-lg text-gray-700 leading-relaxed">
-              After completing an internship with <span className="font-semibold text-blue-600">AltSchool Africa</span>, I now work as a freelancer, creating impactful projects and writing technical articles. I’m dedicated to building user-centered solutions and expanding my skill set.
+
+            <p className="mt-4 text-lg md:text-xl text-slate-700 leading-relaxed">
+              {' '}
+              My background in{' '}
+              <span className="font-semibold text-slate-900">Statistics</span> and{' '}
+              <span className="font-semibold text-slate-900">Computer Science</span> helps me blend logic with creative problem-solving.
             </p>
-            <div className="mt-6 flex justify-center md:justify-start space-x-4">
+
+            <div className="mt-8 flex flex-wrap justify-center md:justify-start gap-4">
               <a
                 href="https://drive.google.com/file/d/1iAr6y5g4IDS24fbofgC6HFLdcSJp2R9k/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-blue-500 text-white py-2 px-6 rounded-full font-medium hover:bg-blue-600 transition duration-300"
+                className="bg-slate-800 outline-2 text-white py-2.5 px-8 rounded-full font-medium hover:bg-white hover:text-slate-900 transition duration-300 shadow-md"
               >
                 View Resume
               </a>
               <a
                 href={CV}
                 download
-                className="inline-block bg-gray-300 text-gray-800 py-2 px-6 rounded-full font-medium hover:bg-gray-400 transition duration-300"
+                className="border border-slate-900 text-slate-900 py-2.5 px-8 rounded-full font-medium hover:bg-gradient-to-br hover:from-slate-900 hover:via-slate-800 hover:to-slate-900 hover:text-white transition duration-300"
               >
                 Download Resume
               </a>
@@ -47,96 +57,58 @@ const About = () => {
           </div>
         </div>
 
-        {/* Details Section */}
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Education & Experience Timeline */}
-          <div className="p-6 border-l-4 border-blue-600 bg-white rounded-lg shadow-lg hover:shadow-2xl hover:border-blue-800 transition duration-300">
-            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Education & Experience</h3>
-            <ul className="space-y-4 text-gray-600">
-              <li>
-                <span className="font-semibold">B.Sc in Statistics</span> – Developed analytical and statistical skills.
-              </li>
-              <li>
-                <span className="font-semibold">National Diploma in Computer Science</span> – Built a strong foundation in programming.
-              </li>
-              <li>
-                <span className="font-semibold">TIIDELab Fellowship</span> – Explored <span className="font-semibold text-blue-600">Software Development</span> and <span className="font-semibold text-blue-600">Artificial Intelligence</span> in depth.
-              </li>
-              <li>
-                <span className="font-semibold">AltSchool Africa Internship</span> – Gained hands-on experience in frontend development.
-              </li>
-              <li>
-                <span className="font-semibold">KSolutionsNG Consulting</span> – Frontend Engineer, April 2023 – Present.
-              </li>
-              <li>
-                <span className="font-semibold">Freelance Developer</span> – Currently working on freelance projects and writing articles on the side.
-              </li>
-              <li>
-                <span className="font-semibold">Royalsmith Trucking LLC</span> – Frontend Engineer, Jan. 2022 – March 2023.
-              </li>
+        {/* Education & Experience */}
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-10 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-gray-200 rounded-xl p-10 shadow-md">
+          {/* Education */}
+          <div>
+            <h3 className="text-2xl font-semibold text-white mb-4">Education</h3>
+            <ul className="space-y-3">
+              <li>Ph.D. in Computer Science & Engineering – University of Cincinnati (Ongoing)</li>
+              <li>B.Sc. in Statistics – Michael Okpara University of Agriculture, Umudike</li>
+              <li>National Diploma in Computer Science – Federal Polytechnic, Bida</li>
+              <li>TIIDELab Fellowship – Software Development & Artificial Intelligence</li>
             </ul>
           </div>
 
-          {/* Hobbies & Interests */}
-          <div className="p-6 bg-white rounded-lg shadow-lg hover:shadow-2xl transition duration-300 border-r-4 border-blue-600">
-            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Hobbies & Interests</h3>
-            <ul className="list-disc list-inside text-gray-600">
-              <li>
-                Playing sports like <span className="font-semibold text-blue-600">football</span>,{' '}
-                <span className="font-semibold text-blue-600">basketball</span>, and{' '}
-                <span className="font-semibold text-blue-600">volleyball</span>.
-              </li>
-              <li>Exploring new technologies and creating interactive user experiences.</li>
-              <li>Traveling to new places and learning about diverse cultures.</li>
-              <li>Playing <span className="font-semibold text-blue-600">video games</span> to unwind and relax.</li>
-              <li>
-                Reading books, especially on <span className="font-semibold text-blue-600">self-development</span> and{' '}
-                <span className="font-semibold text-blue-600">technology trends</span>.
-              </li>
-              <li>
-                Listening to podcasts on <span className="font-semibold text-blue-600">tech innovations</span> and{' '}
-                <span className="font-semibold text-blue-600">entrepreneurship</span>.
-              </li>
-              <li>Volunteering and mentoring new tech enthusiasts in the community.</li>
+          {/* Experience */}
+          <div>
+            <h3 className="text-2xl font-semibold text-white mb-4">Experience</h3>
+            <ul className="space-y-3">
+              <li>Frontend Engineer – KSolutionsNG (2023–Present)</li>
+              <li>Frontend Developer – AltSchool Africa Internship (2022)</li>
+              <li>Technical Writer – Freelance (2023 – Jan 2025)</li>
             </ul>
           </div>
         </div>
 
-        {/* Professional Skills Section */}
-        <div className="mt-12 p-6 bg-gray-100 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
-          <h3 className="text-2xl font-semibold text-gray-800 mb-4 text-center">Professional Skills</h3>
-          <div className="flex flex-wrap justify-center gap-4 text-center">
-            <span className="px-4 py-2 bg-blue-100 text-blue-600 font-medium rounded-full">HTML & CSS</span>
-            <span className="px-4 py-2 bg-blue-100 text-blue-600 font-medium rounded-full">JavaScript</span>
-            <span className="px-4 py-2 bg-blue-100 text-blue-600 font-medium rounded-full">React</span>
-            <span className="px-4 py-2 bg-blue-100 text-blue-600 font-medium rounded-full">Next.js</span>
-            <span className="px-4 py-2 bg-blue-100 text-blue-600 font-medium rounded-full">Tailwind CSS</span>
-            <span className="px-4 py-2 bg-blue-100 text-blue-600 font-medium rounded-full">Technical Writing</span>
-            <span className="px-4 py-2 bg-blue-100 text-blue-600 font-medium rounded-full">Version Control (Git)</span>
-            <span className="px-4 py-2 bg-blue-100 text-blue-600 font-medium rounded-full">Data Analysis</span>
-          </div>
-        </div>
-
-        {/* Project Section with Button */}
-        <div className="mt-12 p-6 bg-white rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
-          <h3 className="text-2xl font-semibold text-gray-800 mb-4 text-center">My Projects</h3>
-          <p className="text-gray-600 text-center mb-4">
-            I have worked on various projects that showcase my skills in frontend development and technical writing. Each project has been a learning experience that has pushed me to grow and innovate.
-          </p>
-          <div className="text-center">
-            <a
-              href="#projects"
-              className="mt-4 inline-block text-blue-500 bg-blue-100 py-2 px-6 rounded-full font-medium hover:bg-blue-600 hover:text-white transition duration-300"
-            >
-              View My Work
-            </a>
+        {/* Skills */}
+        <div className="mt-16 p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
+          <h3 className="text-2xl font-semibold text-gray-800 mb-6 text-center">Professional Skills</h3>
+          <div className="flex flex-wrap justify-center gap-3">
+            {[
+              'Python',
+              'JavaScript',
+              'React.js',
+              'Next.js',
+              'Tailwind CSS',
+              'Git & Version Control',
+              'Technical Writing',
+              'Data Analysis',
+            ].map((skill, index) => (
+              <span
+                key={index}
+                className="px-4 py-2 bg-slate-200 text-slate-900 font-medium rounded-full hover:bg-gradient-to-br hover:from-slate-900 hover:via-slate-800 hover:to-slate-900 hover:text-white transition duration-300"
+              >
+                {skill}
+              </span>
+            ))}
           </div>
         </div>
 
         {/* Personal Philosophy */}
-        <div className="mt-12 text-center bg-gray-50 py-8 px-6 border-t-4 border-blue-600 rounded-lg shadow-lg transition duration-300">
-          <p className="text-lg text-gray-700 italic leading-relaxed">
-            "I believe that with dedication and creativity, technology can empower us to solve real-world problems and make life a little easier. I’m here to learn, build, and make an impact, one project at a time."
+        <div className="mt-16 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-gray-200 py-10 px-8 rounded-lg shadow-md text-center">
+          <p className="text-lg italic max-w-3xl mx-auto leading-relaxed">
+            “Every project I build teaches me something new, and that’s the part I love most.”
           </p>
         </div>
       </div>
