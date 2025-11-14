@@ -3,9 +3,9 @@ import React from 'react';
 function Projects() {
   const projectList = [
     {
-      title: 'PassGrade',
+      title: 'PassGrades',
       description:
-        'PassGrade helps students prepare for international exams like SAT, IELTS, and GRE through live and recorded courses. It offers personalized dashboards, progress tracking, and expert-led lessons to make learning efficient and accessible.',
+        'PassGrades helps students prepare for international exams like SAT, IELTS, and GRE through live and recorded courses. It offers personalized dashboards, progress tracking, and expert-led lessons to make learning efficient and accessible.',
       link: 'https://passgrades.com/',
     },
     {
