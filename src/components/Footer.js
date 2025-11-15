@@ -9,7 +9,7 @@ function Footer() {
         <div className="flex flex-col items-center md:items-start mb-6 md:mb-0 text-center md:text-left">
           <h4 className="text-xl font-semibold mb-2 text-white">Contact Me</h4>
           <p className="flex items-center text-gray-300">
-            <FaEnvelope className="mr-2" /> umunnacj@mail.uc.edu
+            <FaEnvelope className="mr-2" /> umunnajoseph70@gmail.com
           </p>
           <p className="flex items-center mt-2 text-gray-300">
             <FaPhoneAlt className="mr-2" /> 1-513-206-5282
