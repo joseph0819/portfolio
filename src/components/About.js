@@ -74,9 +74,11 @@ const About = () => {
           <div>
             <h3 className="text-2xl font-semibold text-white mb-4">Experience</h3>
             <ul className="space-y-3">
-              <li>Frontend Engineer – KSolutionsNG (2023–Present)</li>
-              <li>Frontend Developer – AltSchool Africa Internship (2022)</li>
-              <li>Technical Writer – Freelance (2023 – Jan 2025)</li>
+              <li>Research Assistant - University of Cincinnati, Ohio ( Aug 2025 – Present )</li>
+              <li>Frontend Dev - Royalsmith Trucking LLC (  June 2024 – Nov 2024 )</li>
+              <li>Frontend Dev – KSolutionsNG ( May 2023 – June 2025 )</li>
+              <li>Technical Writer – Freelance ( Dec 2022 – Jan 2025 )</li>
+              <li>Frontend Dev – AltSchool Africa Internship ( Jan 2022 - Sept 2022 )</li>
             </ul>
           </div>
         </div>
